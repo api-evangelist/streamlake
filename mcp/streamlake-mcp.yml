@@ -1,0 +1,14 @@
+name: StreamLake MCP
+generated: '2026-10-13'
+method: derived
+source: openapi/_ae-authored/streamlake-openapi-generated.yml
+status: candidate
+note: No StreamLake MCP server is documented. console.streamlake.ai/api/mcp answered 401 to an anonymous probe (preflight 2026-10-13) with an identical 401 on the control path, so it is an opaque console route, not a verified MCP surface. Candidate tool derived from the documentation-generated contract.
+deployment:
+  mode: none
+  auth: api-key
+  verified: derived
+tools:
+- name: create_chat_completion
+  description: Create a chat completion against a Vanchin online inference endpoint (OpenAI-compatible).
+  operationId: post_api_gateway_v1_endpoints_chat_completions

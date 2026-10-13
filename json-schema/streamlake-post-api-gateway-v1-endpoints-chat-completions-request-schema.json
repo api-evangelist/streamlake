@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/streamlake/main/json-schema/streamlake-post-api-gateway-v1-endpoints-chat-completions-request-schema.json",
+  "title": "PostApiGatewayV1EndpointsChatCompletionsRequest",
+  "x-generated": "2026-10-13",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/streamlake-openapi-generated.yml#/components/schemas/PostApiGatewayV1EndpointsChatCompletionsRequest",
+  "type": "object",
+  "properties": {
+    "model": {
+      "type": "string",
+      "description": "Inference Endpoint ID"
+    },
+    "messages": {
+      "type": "array",
+      "description": "Lists of conversation messages"
+    },
+    "temperature": {
+      "type": "number",
+      "description": "Sampling Temperature, Range: 0-2, Default: 1"
+    },
+    "top_p": {
+      "type": "number",
+      "description": "Nucleus Sampling Parameter, Range: 0-1, Default: 1"
+    },
+    "n": {
+      "type": "integer",
+      "description": "Number of Responses to Generate, Default: 1"
+    },
+    "stream": {
+      "type": "boolean",
+      "description": "Whether to stream responses, Default: false"
+    },
+    "stop": {
+      "type": "string",
+      "description": "Stop words"
+    },
+    "max_tokens": {
+      "type": "integer",
+      "description": "Maximum Generation Length"
+    },
+    "presence_penalty": {
+      "type": "number",
+      "description": "Presence Penalty, Range: -2 to 2, Default: 0"
+    },
+    "frequency_penalty": {
+      "type": "number",
+      "description": "Frequency Penalty, Range: -2 to 2, Default: 0"
+    }
+  },
+  "required": [
+    "model",
+    "messages"
+  ]
+}

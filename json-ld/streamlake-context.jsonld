@@ -1,0 +1,81 @@
+{
+  "@context": {
+    "@vocab": "https://streamlake.ai/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "streamlake": "https://streamlake.ai/schema#",
+    "PostApiGatewayV1EndpointsChatCompletionsRequest": "streamlake:PostApiGatewayV1EndpointsChatCompletionsRequest",
+    "model": {
+      "@id": "streamlake:model",
+      "@type": "xsd:string"
+    },
+    "messages": {
+      "@id": "streamlake:messages",
+      "@container": "@list"
+    },
+    "temperature": {
+      "@id": "streamlake:temperature",
+      "@type": "xsd:decimal"
+    },
+    "top_p": {
+      "@id": "streamlake:top_p",
+      "@type": "xsd:decimal"
+    },
+    "n": {
+      "@id": "streamlake:n",
+      "@type": "xsd:integer"
+    },
+    "stream": {
+      "@id": "streamlake:stream",
+      "@type": "xsd:boolean"
+    },
+    "stop": {
+      "@id": "streamlake:stop",
+      "@type": "xsd:string"
+    },
+    "max_tokens": {
+      "@id": "streamlake:max_tokens",
+      "@type": "xsd:integer"
+    },
+    "presence_penalty": {
+      "@id": "streamlake:presence_penalty",
+      "@type": "xsd:decimal"
+    },
+    "frequency_penalty": {
+      "@id": "streamlake:frequency_penalty",
+      "@type": "xsd:decimal"
+    },
+    "PostApiGatewayV1EndpointsChatCompletionsResponse": "streamlake:PostApiGatewayV1EndpointsChatCompletionsResponse",
+    "id": {
+      "@id": "streamlake:id",
+      "@type": "xsd:string"
+    },
+    "object": {
+      "@id": "streamlake:object",
+      "@type": "xsd:string"
+    },
+    "created": {
+      "@id": "streamlake:created",
+      "@type": "xsd:integer"
+    },
+    "choices": {
+      "@id": "streamlake:choices",
+      "@container": "@list"
+    },
+    "usage": {
+      "@id": "streamlake:usage"
+    },
+    "service_tier": {
+      "@id": "streamlake:service_tier",
+      "@type": "xsd:string"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "StreamLake API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects StreamLake's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-13) from openapi/_ae-authored/streamlake-openapi-generated.yml.",
+  "dcterms:created": "2026-10-13",
+  "dcterms:source": [
+    "openapi/_ae-authored/streamlake-openapi-generated.yml"
+  ]
+}

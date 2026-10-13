@@ -1,0 +1,7 @@
+name: StreamLake Lifecycle
+generated: '2026-10-13'
+method: searched
+source: https://streamlake.ai/document
+versioning: URL path version (/api/gateway/v1/...); models are versioned by name (for example kat-coder-pro-v2.5). No published API versioning policy found.
+deprecation: No published deprecation or sunset policy found in the StreamLake document center.
+status_page: https://status.streamlake.ai

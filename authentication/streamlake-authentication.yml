@@ -1,0 +1,13 @@
+name: StreamLake Vanchin API Authentication
+generated: '2026-10-13'
+method: searched
+source: https://streamlake.ai/document/DOC/mj9z6fh8lxn87i86jrp
+docs: https://streamlake.ai/document/DOC/mkaylxzkso38sqxcpa
+schemes:
+- name: bearer
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  format: 'Authorization: Bearer YOUR_API_KEY'
+  description: API keys are created and managed in the Vanchin Console (Vanchin Console > API Key), which shows a system default key and lets users create and delete custom keys; deletion is permanent.

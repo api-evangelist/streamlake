@@ -1,0 +1,27 @@
+generated: '2026-10-13'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/streamlake-openapi-generated.yml
+vocabulary:
+  name: StreamLake Domain Vocabulary
+  description: 'Terms declared by StreamLake''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-13'
+  terms:
+  - term: PostApiGatewayV1EndpointsChatCompletionsRequest
+    definition: 'Object declared by the contract with fields: model, messages, temperature, top_p, n, stream, stop, max_tokens, presence_penalty,
+      frequency_penalty.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/streamlake-openapi-generated.yml#/components/schemas/PostApiGatewayV1EndpointsChatCompletionsRequest
+  - term: PostApiGatewayV1EndpointsChatCompletionsResponse
+    definition: 'Object declared by the contract with fields: id, object, created, model, choices, usage, service_tier.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/streamlake-openapi-generated.yml#/components/schemas/PostApiGatewayV1EndpointsChatCompletionsResponse
+  - term: Api
+    definition: 'Resource group in the contract; its operation POST /api/gateway/v1/endpoints/chat/completions: Online Inference API Endpoint
+      Conversation API'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/streamlake-openapi-generated.yml

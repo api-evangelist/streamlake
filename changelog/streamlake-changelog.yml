@@ -1,0 +1,15 @@
+name: StreamLake Model Release Notes
+generated: '2026-10-13'
+method: searched
+source: https://streamlake.ai/document/DOC/mhuhpp0nbt6upby80q
+scheme: model-version
+current_version: KAT-Coder-Pro V1（1110）
+entries:
+- version: KAT-Coder-Pro V1（1110）
+  date: '2025-11-10'
+  breaking: false
+  highlights:
+  - Optimized integration performance and interaction experience within mainstream Agent frameworks.
+  - Enhanced code reasoning and frontend code generation quality.
+  - Reduced the overall error rate for tool (API) calls.
+  - Fixed a bug where tool calls could trigger an infinite loop under specific scenarios.

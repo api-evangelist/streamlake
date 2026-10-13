@@ -1,0 +1,24 @@
+name: StreamLake Vanchin API Error Codes
+generated: '2026-10-13'
+method: searched
+source: https://streamlake.ai/document/DOC/mkf81ayc461ilb15zid
+format: custom-json
+envelope:
+  example: '{"ResponseMeta": {"RequestId": "", "ErrorCode": "", "ErrorMessage": ""}}'
+  fields: [ResponseMeta.RequestId, ResponseMeta.ErrorCode, ResponseMeta.ErrorMessage]
+  source: https://streamlake.ai/document/DOC/mj9z6fh8lxn87i86jrp
+problems:
+- {status: 400, title: InvalidArgument, type: InvalidArgument, description: Invalid parameter., remediation: An invalid parameter was provided by the user.}
+- {status: 400, title: InvalidArgument.MissingRequiredParameter, type: InvalidArgument.MissingRequiredParameter, description: The xxx parameter is required., remediation: A required parameter is absent.}
+- {status: 400, title: InvalidArgument.RequestBodyInvalid, type: InvalidArgument.RequestBodyInvalid, description: 'Invalid request body format, please check the request body format.', remediation: The parameter format is invalid.}
+- {status: 400, title: InvalidEndpoint.StoppedEndpoint, type: InvalidEndpoint.StoppedEndpoint, description: The requested endpoint has been stopped and is currently unavailable., remediation: The request targets an inference endpoint that has already been stopped.}
+- {status: 400, title: InvalidArgument.Authorization, type: InvalidArgument.Authorization, description: The provided API key is invalid., remediation: Invalid API key.}
+- {status: 400, title: InvalidArgument.UserInfoError, type: InvalidArgument.UserInfoError, description: The userInfo is invalid., remediation: Invalid user credentials.}
+- {status: 401, title: Unauthorized, type: Unauthorized, description: AUTH_INFO missing., remediation: Authentication credentials are missing.}
+- {status: 403, title: Forbidden.InsufficientBalance, type: Forbidden.InsufficientBalance, description: The balance is insufficient., remediation: Insufficient account balance.}
+- {status: 403, title: Forbidden.Frozen, type: Forbidden.Frozen, description: User has been frozen., remediation: Account suspended.}
+- {status: 403, title: Forbidden, type: Forbidden, description: The request was denied by the server., remediation: Insufficient permissions to fulfill the request.}
+- {status: 403, title: UnaccessibleUser, type: UnaccessibleUser, description: 'Request was rejected due to reason: user is not allowed to access', remediation: 'Under the inference scenario, the account has neither available balance nor credit limit; the request is therefore restricted.'}
+- {status: 404, title: ResourceNotFound, type: ResourceNotFound, description: Resource not found., remediation: Resource not found.}
+- {status: 429, title: TooManyRequests, type: TooManyRequests, description: Too many requests., remediation: Request throttled.}
+- {status: 500, title: InternalError, type: InternalError, description: The request processing has failed due to some unknown error., remediation: Internal server error—please submit a support ticket for platform assistance.}
