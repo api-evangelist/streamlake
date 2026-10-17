@@ -79,29 +79,26 @@ common:
 - type: StatusPage
   url: https://status.streamlake.ai
 apis:
-- aid: streamlake:vanchin-online-inference-api
-  name: StreamLake Vanchin Online Inference API
-  description: OpenAI-compatible chat completions endpoint for StreamLake Vanchin online inference endpoints, authenticated
-    with a Bearer API key, supporting streaming (server-sent events) and non-streaming responses. Coding Plan subscribers
-    use the /api/gateway/coding/v1 base instead of the pay-as-you-go base.
-  image: https://www.streamlake.ai/img/StreamLake_1200-630.png
+- aid: streamlake:streamlake-gateway-api
+  name: StreamLake Gateway API
+  description: The Gateway API from StreamLake — 1 operation(s) for gateway.
   humanURL: https://streamlake.ai/document/DOC/mj9z6fh8lxn87i86jrp
   baseURL: https://vanchin.streamlake.ai/api/gateway/v1/endpoints
   tags:
-  - Chat Completions
-  - Model Inference
+  - Gateway
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/streamlake-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/streamlake-gateway-api-openapi.yml
   - type: Documentation
     url: https://streamlake.ai/document/DOC/mj9z6fh8lxn87i86jrp
   - type: ErrorCodes
     url: https://streamlake.ai/document/DOC/mkf81ayc461ilb15zid
   - type: JSONSchema
-    url: json-schema/streamlake-post-api-gateway-v1-endpoints-chat-completions-request-schema.json
+    url: >-
+      json-schema/streamlake-post-api-gateway-v1-endpoints-chat-completions-request-schema.json
   - type: JSONSchema
-    url: json-schema/streamlake-post-api-gateway-v1-endpoints-chat-completions-response-schema.json
+    url: >-
+      json-schema/streamlake-post-api-gateway-v1-endpoints-chat-completions-response-schema.json
 x-enrichment:
   date: '2026-10-13'
   status: enriched

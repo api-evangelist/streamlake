@@ -1,0 +1,20 @@
+{
+  "provider": "streamlake",
+  "sources": [
+    "_ae-authored/streamlake-openapi-generated.yml"
+  ],
+  "outputs": [
+    "streamlake-gateway-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "streamlake-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "streamlake-openapi-generated.yml: tagged paths POST /api/gateway/v1/endpoints/chat/completions -> Gateway",
+    "streamlake-openapi-generated.yml: declared missing tag: Gateway",
+    "apis.yml register: written (+1 apis, 1 total)"
+  ],
+  "skipped": []
+}
