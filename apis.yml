@@ -15,6 +15,14 @@ modified: '2026-10-13'
 tags:
 - Company
 - Artificial Intelligence
+- LLM
+- Model Inference
+- Chat Completions
+- AI Coding
+- Kuaishou
+tags_raw:
+- Company
+- Artificial Intelligence
 - Large Language Models
 - Model Inference
 - Chat Completions
@@ -85,6 +93,8 @@ apis:
   humanURL: https://streamlake.ai/document/DOC/mj9z6fh8lxn87i86jrp
   baseURL: https://vanchin.streamlake.ai/api/gateway/v1/endpoints
   tags:
+  - Gateways
+  tags_raw:
   - Gateway
   properties:
   - type: OpenAPI
